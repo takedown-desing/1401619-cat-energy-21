@@ -1,7 +1,11 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Боровиков](https://up.htmlacademy.ru/adaptive/21/user/1401619).
+<<<<<<< HEAD
 * Наставник: ['Максим Прусаков ](https://htmlacademy.ru/profile/hikikomori`).
+=======
+* Наставник: [Максим Прусаков](https://htmlacademy.ru/profile/hikikomori).
+>>>>>>> 7c9ff69c6fa32ae52888ecc714f1040fd7820c79
 
 ---
 
