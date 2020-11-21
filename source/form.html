@@ -9,7 +9,7 @@
       <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/150x150" alt="Кэт энерджи">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -29,16 +29,16 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <h1 class="page-main__title">Подбор программы</h1>
-        <form action="https://echo.htmlacademy.ru" method="get" class="page-main__form">
+        <form action="https://echo.htmlacademy.ru" method="post" class="form">
           <div class="form__wrapper">
             <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
             <div class="form__container">
               <fieldset class="form__fieldset">
                 <label class="form__label">Имя:*
-                  <input type="text" name="name" class="form__input form__input--name" placeholder="Барсик">
+                  <input type="text" name="name" required="required" class="form__input form__input--name" placeholder="Барсик">
                 </label>
                 <label class="form__label">Вес (кг):*
-                  <input type="number" name="weight" class="form__input form__input--weight" placeholder="7">
+                  <input type="number" name="weight" required="required" class="form__input form__input--weight" placeholder="7">
                 </label>
                 <label class="form__label">Возраст (лет):
                   <input type="number" name="age" class="form__input form__input--age" placeholder="7">
@@ -59,17 +59,15 @@
               </legend>
               <div class="form__container">
                 <label class="form__label form__label--email">E-mail:*
-                  <input type="email" name="email" class="form__input" placeholder="kuklachev@gmail.com">
-                  <img src="https://via.placeholder.com/150x150" alt="email">
+                  <input type="email" required="required" name="email" class="form__input" placeholder="kuklachev@gmail.com">
                 </label>
                 <label class="form__label form__label--phone">Телефон:*
-                  <input type="text" name="phone" class="form__input" placeholder="8 (960) 900-60-90">
-                  <img src="https://via.placeholder.com/150x150" alt="email">
+                  <input type="text" name="phone" required="required" class="form__input" placeholder="8 (960) 900-60-90">
                 </label>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--comment">
-              <legend class="form__heading">
+              <legend class="form__caption">
                 <span>Комментарий</span>
               </legend>
               <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="7" class="form__input"></textarea>
@@ -79,14 +77,14 @@
                 <span>Дополнительно</span>
               </legend>
               <div class="form__fieldset-wrapper">
-                <input type="checkbox" name="sweetener" id="checked-sweetener" class="form__checkbox visually-hidden" checked>
-                <label for="checked-sweetener" class="form__checkbox-label">Сахарозаменитель</label>
-                <input type="checkbox" name="water" id="checked-water" class="form__checkbox visually-hidden">
-                <label for="checked-water" class="form__checkbox-label">Питьевая вода</label>
-                <input type="checkbox" name="milk" id="checked-milk" class="form__checkbox visually-hidden">
-                <label for="checked-milk" class="form__checkbox-label">Молоко</label>
-                <input type="checkbox" name="vitamins" id="checked-vitamins" class="form__checkbox visually-hidden">
-                <label for="checked-vitamins" class="form__checkbox-label">Витамины</label>
+                <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox visually-hidden" checked>
+                <label for="sweetener" class="form__checkbox-label">Сахарозаменитель</label>
+                <input type="checkbox" name="water" id="water" class="form__checkbox visually-hidden">
+                <label for="water" class="form__checkbox-label">Питьевая вода</label>
+                <input type="checkbox" name="milk" id="milk" class="form__checkbox visually-hidden">
+                <label for="milk" class="form__checkbox-label">Молоко</label>
+                <input type="checkbox" name="vitamins" id="vitamins" class="form__checkbox visually-hidden">
+                <label for="vitamins" class="form__checkbox-label">Витамины</label>
               </div>
             </fieldset>
             <div class="form__button-wrapper">
@@ -119,29 +117,27 @@
               <h3 class="visually-hidden">Cat Energy</h3>
             </a>
           </div>
-          <div class="footer__block-socialnetworks">
-            <ul class="footer__list socialnetworks-list">
-              <li class="socialnetworks-list__item">
-                <a href="https://vk.com/" class="socialnetworks-list__link">
-                  <img src="https://via.placeholder.com/150x150" alt="vk">
-                </a>
-              </li>
-              <li class="socialnetworks-list__item">
-                <a href="https://www.instagram.com/" class="socialnetworks-list__link">
-                  <img src="https://via.placeholder.com/150x150" alt="instagram">
-                </a>
-              </li>
-              <li class="socialnetworks-list__item">
-                <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
-                  <img src="https://via.placeholder.com/150x150" alt="facebook">
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="footer__list socialnetworks-list">
+            <li class="socialnetworks-list__item">
+              <a href="https://vk.com/" class="socialnetworks-list__link">
+                <img src="https://via.placeholder.com/150x150" alt="vk">
+              </a>
+            </li>
+            <li class="socialnetworks-list__item">
+              <a href="https://www.instagram.com/" class="socialnetworks-list__link">
+                <img src="https://via.placeholder.com/150x150" alt="instagram">
+              </a>
+            </li>
+            <li class="socialnetworks-list__item">
+              <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
+                <img src="https://via.placeholder.com/150x150" alt="facebook">
+              </a>
+            </li>
+          </ul>
           <div class="footer__copyright">
             <a class="footer__copyright-link" href="https://htmlacademy.ru">
               <h3 class="footer__title">HTML Academy</h3>
-              <img class="footer__copyright-icon" src="https://via.placeholder.com/150x150" alt="facebook">
+              <img class="footer__copyright-icon" src="https://via.placeholder.com/150x150" alt="HTML Academy">
             </a>
           </div>
         </div>
