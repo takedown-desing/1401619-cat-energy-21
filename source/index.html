@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Кэт энерджи">
+        <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">меню</span></button>
+        <button class="main-nav__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -34,44 +37,45 @@
             <h2 class="visually-hidden">Питание для котов</h2>
             <p class="promo__slogan">Функциональное питание для котов</p>
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-            <img src="https://via.placeholder.com/150x150" alt="Кэт энерджи с курицей">
-            <a class="promo__link"href="#">Подобрать Программу</a>
+            <img src="img/index-background-mobile.png" alt="Кэт энерджи с курицей">
           </header>
+          <a class="promo__link"href="#">Подобрать Программу</a>
         </div>
         <div class="holder">
           <div class="holder__wrapper">
             <div class="holder__item">
-              <img src="https://via.placeholder.com/150x150" alt="похудение">
+              <img src="img/cat_back-slim-mobile.png" alt="похудение">
               <p class="holder__title">Похудение</p>
               <p class="holder__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="holder__link" href="catalog.html">Каталог Slim</a>
             </div>
             <div class="holder__item">
-              <img src="https://via.placeholder.com/150x150" alt="набор массы">
+              <img src="img/cat_back-pro-mobile.png" alt="набор массы">
               <p class="holder__title">Набор массы</p>
               <p class="holder__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="holder__link" href="catalog.html">Каталог Slim</a>
+              <a class="holder__link" href="catalog.html">Каталог Pro</a>
             </div>
           </div>
         </div>
         <div class="programs">
           <div class="programs__wrapper">
+            <h2 class="programs__title">Как это работает</h2>
             <ul class="programs__list">
               <li class="programs__item">
-                <img src="https://via.placeholder.com/150x150" alt="Полезные вещества">
+                <img src="img/leaflet-mobile.png" alt="Полезные вещества">
                 <p class="programs__text">Функциональное питание<br> содержит только полезные<br> питательные вещества.</p>
               </li>
               <li class="programs__item">
-                <img src="https://via.placeholder.com/150x150" alt="Функциональное питание">
+                <img src="img/powder-mobile.png" alt="Функциональное питание">
                 <p class="programs__text">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.</p>
               </li>
               <li class="programs__item">
-                <img src="https://via.placeholder.com/150x150" alt="Приёмы пищи">
+                <img src="img/cutlery-mobile.png" alt="Приёмы пищи">
                 <p class="programs__text">Замените один-два приема<br>
                 обычной еды на наше<br> функциональное питание.</p>
               </li>
               <li class="programs__item">
-                <img src="https://via.placeholder.com/150x150" alt="Результат">
+                <img src="img/clock-mobile.png" alt="Результат">
                 <p class="programs__text">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!</p>
               </li>
             </ul>
@@ -86,19 +90,22 @@
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
           <div class="example__statistics">
             <div class="example__statistics-block">
+              <span class="example__highlights">5 кг</span>
               <p class="example__statistics-item">
-                <b>5 кг</b> снижение веса
+                снижение веса
               </p>
-              <p class="example__statistics-item"><b>60 дней</b> затрачено времени</p>
+              <span class="example__highlights">60 дней</span>
+              <p class="example__statistics-item">затрачено времени</p>
             </div>
-            <p class="example__text">
+            <p class="example__subtitle">
               <span>Затраты на питание:</span>
               <span>15 000 руб.</span>
             </p>
           </div>
           <div class="example__slider">
             <div class="example__slider-wrapper">
-              <img src="https://via.placeholder.com/150x150" alt="кот">
+              <img src="img/before-mobile1.png" alt="кот до">
+              <img src="img/after-mobile1.png" alt="кот после">
             </div>
             <div class="example__buttons">
               <button class="example__slider-button" type="button">Было</button>
@@ -120,7 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map"><img src="https://via.placeholder.com/150x150" alt="карта"></div>
+        <div class="contacts__map"><img src="img/map-mobile.jpg" alt="карта"></div>
       </section>
     </main>
     <footer class="footer">
@@ -129,29 +136,30 @@
           <div class="footer__block-logo">
             <a href="index.html" class="footer__logo">
               <h3 class="visually-hidden">Cat Energy</h3>
+              <img src="img/footer-logo2.svg" alt="">
             </a>
           </div>
           <ul class="footer__list socialnetworks-list">
             <li class="socialnetworks-list__item">
               <a href="https://vk.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="vk">
+                <img src="img/icon_vkontakte.svg" alt="vk">
               </a>
             </li>
             <li class="socialnetworks-list__item">
               <a href="https://www.instagram.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="instagram">
+                <img src="img/icon_instagram.svg" alt="instagram">
               </a>
             </li>
             <li class="socialnetworks-list__item">
               <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="facebook">
+                <img src="img/icon_facebook.svg" alt="facebook">
               </a>
             </li>
           </ul>
           <div class="footer__copyright">
             <a class="footer__copyright-link" href="https://htmlacademy.ru">
               <h3 class="footer__title">HTML Academy</h3>
-              <img class="footer__copyright-icon" src="https://via.placeholder.com/150x150" alt="HTML Academy">
+              <img class="footer__copyright-icon" src="img/html1.svg" alt="HTML Academy">
             </a>
           </div>
         </div>
