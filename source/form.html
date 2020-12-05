@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" alt="Кэт энерджи">
+      <a class="page-header__logo">
+        <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">меню</span></button>
+        <button class="main-nav__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -45,11 +48,11 @@
                 </label>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--target">
-                <input type="radio" name="target" id="weight-loss" value="weight-loss" class="form__radiobutton visually-hidden" checked>
+                <input type="radio" name="target" id="weight-loss" value="weight-loss" class="form__radiobutton" checked>
                 <label for="weight-loss" class="form__radio-label">Похудение</label>
-                <input type="radio" name="target" id="weight-gain" value="weight-gain" class="form__radiobutton visually-hidden">
+                <input type="radio" name="target" id="weight-gain" value="weight-gain" class="form__radiobutton">
                 <label for="weight-gain" class="form__radio-label">Набор массы</label>
-                <input type="radio" name="target" id="target-none" value="none" class="form__radiobutton visually-hidden">
+                <input type="radio" name="target" id="target-none" value="none" class="form__radiobutton">
                 <label for="target-none" class="form__radio-label">Не знаю (нужен ваш совет)</label>
               </fieldset>
             </div>
@@ -59,7 +62,7 @@
               </legend>
               <div class="form__container">
                 <label class="form__label form__label--email">E-mail:*
-                  <input type="email" required="required" name="email" class="form__input" placeholder="kuklachev@gmail.com">
+                  <input type="email" required="required" name="email" class="form__input" placeholder="KUKLACHEV@GMAIL.COM">
                 </label>
                 <label class="form__label form__label--phone">Телефон:*
                   <input type="text" name="phone" required="required" class="form__input" placeholder="8 (960) 900-60-90">
@@ -70,20 +73,20 @@
               <legend class="form__caption">
                 <span>Комментарий</span>
               </legend>
-              <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="7" class="form__textarea"></textarea>
+              <textarea name="comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА" rows="7" class="form__textarea"></textarea>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--extra">
               <legend class="form__heading">
                 <span>Дополнительно</span>
               </legend>
               <div class="form__fieldset-wrapper">
-                <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox visually-hidden" checked>
+                <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox" checked>
                 <label for="sweetener" class="form__checkbox-label">Сахарозаменитель</label>
-                <input type="checkbox" name="water" id="water" class="form__checkbox visually-hidden">
+                <input type="checkbox" name="water" id="water" class="form__checkbox">
                 <label for="water" class="form__checkbox-label">Питьевая вода</label>
-                <input type="checkbox" name="milk" id="milk" class="form__checkbox visually-hidden">
+                <input type="checkbox" name="milk" id="milk" class="form__checkbox">
                 <label for="milk" class="form__checkbox-label">Молоко</label>
-                <input type="checkbox" name="vitamins" id="vitamins" class="form__checkbox visually-hidden">
+                <input type="checkbox" name="vitamins" id="vitamins" class="form__checkbox">
                 <label for="vitamins" class="form__checkbox-label">Витамины</label>
               </div>
             </fieldset>
@@ -96,17 +99,15 @@
       </div>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__container">
-            <div class="contacts__item">
-              <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-              <div class="contacts__adress">
-                <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
-                <p class="contacts__city">Санкт-Петербург</p>
-              </div>
+          <div class="contacts__item">
+            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <div class="contacts__address">
+              <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__city">Санкт-Петербург</p>
             </div>
           </div>
         </div>
-        <div class="contacts__map"><img src="https://via.placeholder.com/150x150" alt="карта"></div>
+        <div class="contacts__map"><img src="img/map-mobile.jpg" alt="карта"></div>
       </section>
     </main>
     <footer class="footer">
@@ -115,29 +116,30 @@
           <div class="footer__block-logo">
             <a href="index.html" class="footer__logo">
               <h3 class="visually-hidden">Cat Energy</h3>
+              <img src="img/footer-logo2.svg" alt="">
             </a>
           </div>
           <ul class="footer__list socialnetworks-list">
             <li class="socialnetworks-list__item">
               <a href="https://vk.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="vk">
+                <img src="img/icon_vkontakte.svg" alt="vk">
               </a>
             </li>
             <li class="socialnetworks-list__item">
               <a href="https://www.instagram.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="instagram">
+                <img src="img/icon_instagram.svg" alt="instagram">
               </a>
             </li>
             <li class="socialnetworks-list__item">
               <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="facebook">
+                <img src="img/icon_facebook.svg" alt="facebook">
               </a>
             </li>
           </ul>
           <div class="footer__copyright">
             <a class="footer__copyright-link" href="https://htmlacademy.ru">
               <h3 class="footer__title">HTML Academy</h3>
-              <img class="footer__copyright-icon" src="https://via.placeholder.com/150x150" alt="HTML Academy">
+              <img class="footer__copyright-icon" src="img/html1.svg" alt="HTML Academy">
             </a>
           </div>
         </div>
