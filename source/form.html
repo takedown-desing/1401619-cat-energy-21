@@ -48,11 +48,11 @@
                 </label>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--target">
-                <input type="radio" name="target" id="weight-loss" value="weight-loss" class="form__radiobutton" checked>
+                <input type="radio" name="target" id="weight-loss" value="weight-loss" class="form__radiobutton visually-hidden" checked>
                 <label for="weight-loss" class="form__radio-label">Похудение</label>
-                <input type="radio" name="target" id="weight-gain" value="weight-gain" class="form__radiobutton">
+                <input type="radio" name="target" id="weight-gain" value="weight-gain" class="form__radiobutton visually-hidden">
                 <label for="weight-gain" class="form__radio-label">Набор массы</label>
-                <input type="radio" name="target" id="target-none" value="none" class="form__radiobutton">
+                <input type="radio" name="target" id="target-none" value="none" class="form__radiobutton visually-hidden">
                 <label for="target-none" class="form__radio-label">Не знаю (нужен ваш совет)</label>
               </fieldset>
             </div>
@@ -62,7 +62,7 @@
               </legend>
               <div class="form__container">
                 <label class="form__label form__label--email">E-mail:*
-                  <input type="email" required="required" name="email" class="form__input" placeholder="KUKLACHEV@GMAIL.COM">
+                  <input type="email" required="required" name="email" class="form__input" placeholder="kuklachev@gmail.com">
                 </label>
                 <label class="form__label form__label--phone">Телефон:*
                   <input type="text" name="phone" required="required" class="form__input" placeholder="8 (960) 900-60-90">
@@ -73,20 +73,20 @@
               <legend class="form__caption">
                 <span>Комментарий</span>
               </legend>
-              <textarea name="comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА" rows="7" class="form__textarea"></textarea>
+              <textarea name="comment" placeholder="Расскажите обо всех повадках кота" rows="7" class="form__textarea"></textarea>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--extra">
               <legend class="form__heading">
                 <span>Дополнительно</span>
               </legend>
               <div class="form__fieldset-wrapper">
-                <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox" checked>
+                <input type="checkbox" name="sweetener" id="sweetener" class="form__checkbox visually-hidden" checked>
                 <label for="sweetener" class="form__checkbox-label">Сахарозаменитель</label>
-                <input type="checkbox" name="water" id="water" class="form__checkbox">
+                <input type="checkbox" name="water" id="water" class="form__checkbox visually-hidden">
                 <label for="water" class="form__checkbox-label">Питьевая вода</label>
-                <input type="checkbox" name="milk" id="milk" class="form__checkbox">
+                <input type="checkbox" name="milk" id="milk" class="form__checkbox visually-hidden">
                 <label for="milk" class="form__checkbox-label">Молоко</label>
-                <input type="checkbox" name="vitamins" id="vitamins" class="form__checkbox">
+                <input type="checkbox" name="vitamins" id="vitamins" class="form__checkbox visually-hidden">
                 <label for="vitamins" class="form__checkbox-label">Витамины</label>
               </div>
             </fieldset>
