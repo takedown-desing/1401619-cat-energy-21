@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" alt="Кэт энерджи">
+      <a class="page-header__logo">
+        <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">меню</span></button>
+        <button class="main-nav__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -96,17 +99,15 @@
       </div>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__container">
-            <div class="contacts__item">
-              <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-              <div class="contacts__adress">
-                <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
-                <p class="contacts__city">Санкт-Петербург</p>
-              </div>
+          <div class="contacts__item">
+            <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <div class="contacts__address">
+              <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__city">Санкт-Петербург</p>
             </div>
           </div>
         </div>
-        <div class="contacts__map"><img src="https://via.placeholder.com/150x150" alt="карта"></div>
+        <div class="contacts__map"><img src="img/map-mobile.jpg" alt="карта"></div>
       </section>
     </main>
     <footer class="footer">
@@ -115,29 +116,30 @@
           <div class="footer__block-logo">
             <a href="index.html" class="footer__logo">
               <h3 class="visually-hidden">Cat Energy</h3>
+              <img src="img/footer-logo2.svg" alt="">
             </a>
           </div>
           <ul class="footer__list socialnetworks-list">
             <li class="socialnetworks-list__item">
               <a href="https://vk.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="vk">
+                <img src="img/icon_vkontakte.svg" alt="vk">
               </a>
             </li>
             <li class="socialnetworks-list__item">
               <a href="https://www.instagram.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="instagram">
+                <img src="img/icon_instagram.svg" alt="instagram">
               </a>
             </li>
             <li class="socialnetworks-list__item">
               <a href="https://ru-ru.facebook.com/" class="socialnetworks-list__link">
-                <img src="https://via.placeholder.com/150x150" alt="facebook">
+                <img src="img/icon_facebook.svg" alt="facebook">
               </a>
             </li>
           </ul>
           <div class="footer__copyright">
             <a class="footer__copyright-link" href="https://htmlacademy.ru">
               <h3 class="footer__title">HTML Academy</h3>
-              <img class="footer__copyright-icon" src="https://via.placeholder.com/150x150" alt="HTML Academy">
+              <img class="footer__copyright-icon" src="img/html1.svg" alt="HTML Academy">
             </a>
           </div>
         </div>
