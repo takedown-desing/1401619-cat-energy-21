@@ -3,31 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
+      <div class="page-header__wrapper">
       <a class="page-header__logo">
         <img src="img/logo-header-mobile.svg" alt="Кэт энерджи">
       </a>
+      <button class="page-header__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><img src="img/hide_mobile.svg"><span class="visually-hidden">меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог Продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог Продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор Программы</a>
+              <a class="site-list__link" href="form.html">Подбор Программы</a>
             </li>
           </ul>
         </div>
       </nav>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Кэт энерджи</h1>
@@ -37,20 +40,19 @@
             <h2 class="visually-hidden">Питание для котов</h2>
             <p class="promo__slogan">Функциональное питание для котов</p>
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-            <img src="img/index-background-mobile.png" alt="Кэт энерджи с курицей">
           </header>
-          <a class="promo__link"href="#">Подобрать Программу</a>
+          <a class="promo__link" href="#">Подобрать Программу</a>
         </div>
         <div class="holder">
           <div class="holder__wrapper">
             <div class="holder__item">
-              <img src="img/cat_back-slim-mobile.svg" alt="похудение">
+              <img class="holder__image-slim" src="img/cat_back-slim-mobile.svg" alt="похудение">
               <p class="holder__title">Похудение</p>
               <p class="holder__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="holder__link" href="catalog.html">Каталог Slim</a>
             </div>
             <div class="holder__item">
-              <img src="img/cat_back-pro-mobile.svg" alt="набор массы">
+              <img class="holder__image-pro" src="img/cat_back-pro-mobile.svg" alt="набор массы">
               <p class="holder__title">Набор массы</p>
               <p class="holder__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="holder__link" href="catalog.html">Каталог Pro</a>
@@ -90,6 +92,8 @@
               <p class="example__statistics-item">
                 снижение веса
               </p>
+            </div>
+            <div class="example__statistics-block">
               <span class="example__highlights">60 дней</span>
               <p class="example__statistics-item">затрачено времени</p>
             </div>
@@ -123,7 +127,11 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map"><img src="img/map-mobile.jpg" alt="карта"></div>
+        <div class="contacts__map">
+          <img class="contacts__map-mobile" src="img/map-mobile.jpg" alt="карта мобильная">
+          <img class="contacts__map-tablet" src="img/map-tablet.jpg" alt="карта планшетная">
+          <img class="contacts__map-desktop" src="img/map-desktop.jpg" alt="карта десктоп">
+        </div>
       </section>
     </main>
     <footer class="footer">
