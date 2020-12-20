@@ -31,6 +31,7 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   margin-bottom: 20px;
+  counter-reset: section 0;
 
 
   &--leaf {
@@ -62,7 +63,8 @@
     }
 
     &--leaf::before {
-      content: "1";
+      counter-increment: section 1;
+      content: "1" "";
       font-size: 280px;
       line-height: 280px;
       color: @basic_grey;
@@ -78,6 +80,7 @@
     }
 
     &--powder::before {
+      counter-increment: section 2;
       content: "2";
       font-size: 280px;
       line-height: 280px;
@@ -94,6 +97,7 @@
     }
 
     &--cutlery::before {
+      counter-increment: section 3;
       content: "3";
       font-size: 280px;
       line-height: 280px;
@@ -110,6 +114,7 @@
     }
 
     &--time::before {
+      counter-increment: section 4;
       content: "4";
       font-size: 280px;
       line-height: 280px;

@@ -11,3 +11,23 @@
   color: @text-color;
 }
 
+.page__body {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet) {
+  .page__body {
+    width: 100%;
+    padding: 0 64px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page__body {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
