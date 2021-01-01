@@ -18,6 +18,15 @@
 .site-list__link {
   text-decoration: none;
   color: @text-color;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: @desktop) {
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic_white;
+  }
 }
 
 .site-list {
@@ -29,6 +38,15 @@
 @media (min-width: @tablet) {
   .site-list {
     width: 100%;
+    flex-direction: row;
+    padding-left: 34px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .site-list {
+    width: 478px;
+    display: flex;
     flex-direction: row;
     padding-left: 34px;
   }

@@ -31,7 +31,6 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
   margin-bottom: 20px;
-  counter-reset: section 0;
 
 
   &--leaf {
@@ -49,77 +48,25 @@
   &--time {
     background-image: url("../img/clock-mobile.svg");
   }
+}
 
-  @media (min-width: @tablet) {
-    width: 100%;
+@media (min-width: @tablet) {
+  width: 100%;
 
-    &--leaf {
-      background-image: url("../img/leaflet-mobile.svg");
-      background-size: 80px 80px;
-      width: 230px;
-      height: 280px;
-      display: flex;
-      order: 1;
-    }
+  .programs__item {
+    background-size: 80px 80px;
+    width: 230px;
+    height: 280px;
+    display: flex;
+    counter-reset: section;
+  }
 
-    &--leaf::before {
-      counter-increment: section 1;
-      content: "1" "";
-      font-size: 280px;
-      line-height: 280px;
-      color: @basic_grey;
-    }
-
-    &--powder {
-      background-image: url("../img/powder-mobile.svg");
-      background-size: 80px 80px;
-      width: 230px;
-      height: 280px;
-      display: flex;
-      order: 2;
-    }
-
-    &--powder::before {
-      counter-increment: section 2;
-      content: "2";
-      font-size: 280px;
-      line-height: 280px;
-      color: @basic_grey;
-    }
-
-    &--cutlery {
-      background-image: url("../img/cutlery-mobile.svg");
-      background-size: 80px 80px;
-      width: 230px;
-      height: 280px;
-      display: flex;
-      order: 3;
-    }
-
-    &--cutlery::before {
-      counter-increment: section 3;
-      content: "3";
-      font-size: 280px;
-      line-height: 280px;
-      color: @basic_grey;
-    }
-
-    &--time {
-      background-image: url("../img/clock-mobile.svg");
-      background-size: 80px 80px;
-      width: 230px;
-      height: 280px;
-      display: flex;
-      order: 4;
-    }
-
-    &--time::before {
-      counter-increment: section 4;
-      content: "4";
-      font-size: 280px;
-      line-height: 280px;
-      color: @basic_grey;
-    }
+  .programs__item::before {
+    counter-increment: section;
+    content: counter(section) "";
+    font-size: 280px;
+    line-height: 280px;
+    color: @basic_grey;
   }
 }
 
